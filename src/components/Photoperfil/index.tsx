@@ -1,12 +1,12 @@
 "use client";
 
 import Image from 'next/image';
-import profilePic from '@/img/photoperfil.jpg';
+import profilePic from '../../img/photoperfil.jpg';
 import { motion } from 'framer-motion';
 
 export function Photoperfil() {
     return (
-        <motion.div 
+        <motion.div
             className="relative w-full flex justify-center"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -32,7 +32,7 @@ export function Photoperfil() {
                         ease: "linear"
                     }}
                 />
-                
+
                 {/* Efeito de brilho */}
                 <motion.div
                     className="absolute -inset-1 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
@@ -45,7 +45,7 @@ export function Photoperfil() {
                         ease: "linear"
                     }}
                 />
-                
+
                 {/* Container da foto */}
                 <div className="relative">
                     <motion.div
@@ -53,12 +53,14 @@ export function Photoperfil() {
                         whileTap={{ scale: 0.95 }}
                         className="relative rounded-full overflow-hidden w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-white/10"
                     >
-                        <Image 
-                            src={profilePic} 
-                            alt="Professional Photo" 
+                        <Image
+                            src={profilePic}
+                            alt="Professional Photo"
+                            fill
                             className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                             priority
                         />
+
                     </motion.div>
                 </div>
             </div>

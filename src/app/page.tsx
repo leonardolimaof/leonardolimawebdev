@@ -1,10 +1,10 @@
 "use client";
 
-import { Photoperfil } from "@/components/Photoperfil"
 import { motion } from "framer-motion"
 import React from 'react'
 import { FaCode, FaMobile, FaRocket, FaUserClock } from 'react-icons/fa'
 import { IconType } from 'react-icons'
+import { Photoperfil } from "../components/Photoperfil";
 
 interface FeatureCardProps {
   icon: IconType;

@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { FaYoutube } from 'react-icons/fa';
-import Image from 'next/image';
 import React from 'react';
 
 const containerVariants = {
@@ -103,4 +102,4 @@ export default function VideoAulas() {
       </motion.div>
     </div>
   );
-} 
+}
