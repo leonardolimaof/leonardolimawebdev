@@ -4,16 +4,6 @@ import { motion } from 'framer-motion';
 import { FaYoutube } from 'react-icons/fa';
 import React from 'react';
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
-
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   show: { 
