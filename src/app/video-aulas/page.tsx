@@ -27,7 +27,7 @@ const videos = [
 
 export default function VideoAulas() {
   return (
-    <div className="min-h-screen px-4 md:px-8 lg:px-20">
+    <div className="min-h-screen px-4 md:px-8">
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

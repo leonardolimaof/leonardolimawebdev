@@ -79,11 +79,6 @@ const Header = () => {
                                 </Link>
                             </motion.li>
                             <motion.li whileHover={{ scale: 1.1 }}>
-                                <Link href="/cursos" className="text-gray-300 hover:text-white transition-colors">
-                                    Cursos
-                                </Link>
-                            </motion.li>
-                            <motion.li whileHover={{ scale: 1.1 }}>
                                 <Link href="/video-aulas" className="text-gray-300 hover:text-white transition-colors">
                                     Video aulas
                                 </Link>
@@ -139,15 +134,6 @@ const Header = () => {
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         Projetos
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link 
-                                        href="/cursos" 
-                                        className="text-gray-300 hover:text-white transition-colors block" 
-                                        onClick={() => setIsMenuOpen(false)}
-                                    >
-                                        Cursos
                                     </Link>
                                 </li>
                                 <li>
